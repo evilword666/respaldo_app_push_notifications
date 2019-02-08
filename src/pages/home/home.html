@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <ion-title>{{viewTitle}}</ion-title>
+      <ion-buttons end>
+          <button ion-button [disabled]="isToday" (click)="today()">Today</button>
+          <button ion-button (click)="changeMode('month')">M</button>
+          <button ion-button (click)="changeMode('week')">W</button>
+          <button ion-button (click)="changeMode('day')">D</button>
+          <button ion-button (click)="loadEvents()">Load Events</button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="has-header">
+  <calendar [eventSource]="eventSource"
+            [calendarMode]="calendar.mode"
+            [currentDate]="calendar.currentDate"
+            
+            (onCurrentDateChanged)="onCurrentDateChanged($event)"
+            (onEventSelected)="onEventSelected($event)"
+            (onTitleChanged)="onViewTitleChanged($event)"
+            (onTimeSelected)="onTimeSelected($event)"
+            step="30">
+  </calendar>    
+
+  <!-- <button ion-button block (click)="createUser();"> Crear usuario</button> -->
+  <button ion-button block secondary round (click)="updateCalendar1();"> update Calendar OPC 1</button> 
+<!--<button ion-button block round (click)="updateCalendar2();"> update Calendar OPC 2</button>-->
+  
+  <button ion-button block color="tem" round (click)="updateCalendar3();"> update Calendar OPC 3</button>
+
+  <button ion-button block (click)="consultarHorariosBDremota();"> Consultar horarios BD remota</button>
+
+  <!--
+  <button ion-button block (click)="clearTable();"> Vaciar base de datos</button>
+  -->
+  <button ion-button block color="sec" (click)="getCitas();"> Obtener citas de la BD</button>
+  
+
+</ion-content>
+

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "97593199603",
+    "firebase_url": "https://agendabm001.firebaseio.com",
+    "project_id": "agendabm001",
+    "storage_bucket": "agendabm001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97593199603:android:ab068f8bfab22b85",
+        "android_client_info": {
+          "package_name": "com.botonmedico.agendabm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97593199603-ebcbve1q35m3iph8ploirs3lpo5o9cq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzz_A-FvdFCoFnYLq0jQyHUrUi1WZq3oc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

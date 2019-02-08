@@ -1,0 +1,32 @@
+<ion-toolbar color="primary">
+</ion-toolbar>
+<ion-content text-center>
+
+  <img src="img/doctor_logo.png" width="50%" class="margin" />
+  <ion-list>    
+      <ion-item>
+        <ion-label floating>Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="user"></ion-input>
+      </ion-item>
+    
+      <ion-item>        
+        <ion-label floating>Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="pass"></ion-input>
+      </ion-item>    
+    </ion-list>
+    
+<!--
+    <button ion-button outline item-end icon-left color="gris" (click)="registrarse()">Registrarse <br>
+    <ion-icon name="md-create"></ion-icon>
+  </button>
+-->
+    <button ion-button outline item-end icon-left  color="Primary" (click)="login()">Ingresar <br><!-- loguear -->
+        <ion-icon name="person"></ion-icon>
+    </button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+  </ion-toolbar>
+</ion-footer>
+
